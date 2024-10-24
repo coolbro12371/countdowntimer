@@ -10,7 +10,9 @@
 	<h2>Watch the countdown end for a suprise</h2>
 	<p id="demo" class="p777"></p>
 	<audio loop id="audio" src="https://media.memesoundeffects.com/2024/08/Tuco-GET-OUT-Sound-Effect.mp3" type="audio/mpeg"></audio>
-	<p id="h1party"></p>
+	<div id="box999">
+		<p id="h1party"></p>
+	</div>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 22, 2024 16:30:00").getTime();
@@ -41,6 +43,7 @@ var x = setInterval(function() {
 	myAudio.play();
 	document.getElementById("html1").classList.add("animation");
 	document.getElementById("body").style.backgroundImage = "url('https://www.icegif.com/wp-content/uploads/2023/08/icegif-572.gif')";
+	document.getElementById("box999").style.backgroundColor = "red";
 	document.getElementById("h1party").innerHTML = ".-- . ....... --. --- - ....... -.-- --- ..- ....... .- ....... --. .... --- ... - ....... -- .- ... -.- ....... ..-. .-. --- -- ....... -- .-- ..--- ....... .- -. -.. ....... .- ....... .- .. .-. ... --- ..-. - ....... -... ..- .-.. .-.. . - .--. .-. --- --- ..-. ....... ...- . ... - ....... .. ..-. ....... -.-- --- ..- ....... .-- .- -. - ....... -- . ....... .- -. -.. ....... -.-- --- ..- ....... -.-. .- -. ....... .-- .... . .-. . ....... - .... .- - ....... -- .- - -.-. .... .. -. --. ....... -... . -.-. .- ..- ... . ....... .. ....... --. --- - ....... .. - ....... - --- --- .-.-.- ....... .. - .----. ... ....... ..- .--. ....... - --- ....... -.-- --- ..- ....... -... ..- - ....... .. ....... - .... --- ..- --. .... - ....... .. - ....... .-- --- ..- .-.. -.. ....... -... . ....... -.-. --- --- .-.. ....... .. ..-. ....... .-- . ....... .-- . .-. . ....... -- .- - -.-. .... .. -. --. .-.-.-";
   }
 }, 1000);
