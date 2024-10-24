@@ -13,6 +13,7 @@
 	<h1 id="h1party"></h1>
 <script>
 // Set the date we're counting down to
+var xhr=new XMLHttpRequest();
 var countDownDate = new Date("Oct 26, 2024 16:30:00").getTime();
 
 // Update the count down every 1 second
@@ -37,14 +38,12 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-	var txtFile = new XMLHttpRequest();
-	txtFile.open("GET", "./text.txt", true);
-	txtFile.onreadystatechange = function() {
-  		if (txtFile.readyState === 4 && txtFile.status == 200) {
-     			allText = txtFile.responseText;
-  		}
-	document.getElementById('h1party').innerHTML = allText;
 	let myAudio = document.getElementById("audio");
+	xhr.open("GET","/text.txt");
+	xhr.onload=function(){
+    	document.getElementById("h1party").innerHTML = xhr.responseText;
+	}
+	xhr.send();
 	myAudio.play();
 	document.getElementById("html1").classList.add("animation");
 	document.getElementById("body1").style.backgroundImage = "url('https://www.icegif.com/wp-content/uploads/2023/08/icegif-572.gif')";
