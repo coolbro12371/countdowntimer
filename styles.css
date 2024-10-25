@@ -64,6 +64,27 @@ button{
 .p777{
   font-size: 50px;
 }
+.element {
+  border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 4px;
+  background-color: rgba(252, 5, 5, 1);
+  transition: transform 115ms ease-out;
+  animation: cssAnimation_0 767ms infinite ease-in-out;
+}
+
+@keyframes cssAnimation_0 {
+  from {
+    background-color: rgba(252, 5, 5, 1);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+.element:hover {
+  transform: translate(0px, 0px) scale(3, 3);
+}
 .animation{
   animation: customAni 0.009s ease 0s infinite normal none;
 }
