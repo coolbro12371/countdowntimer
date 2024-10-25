@@ -64,7 +64,11 @@ button{
 .p777{
   font-size: 50px;
 }
-.element {
+.hide2{
+  display: none;	
+}
+.element:hover + .hide2 {
+  display: block;
   border: 0px solid rgba(100, 100, 100, 1);
   border-radius: 4px;
   background-color: rgba(252, 5, 5, 1);
@@ -81,8 +85,7 @@ button{
     background-color: rgba(0, 0, 0, 1);
   }
 }
-
-.element:hover {
+.element2:hover {
   transform: translate(0px, 0px) scale(3, 3);
 }
 .animation{
